@@ -1,4 +1,4 @@
-package com.ogcreate;
+package FirstProject.src.com.ogcreate;
 
 public class TypeConversions {
     public static void main(String[] args) {

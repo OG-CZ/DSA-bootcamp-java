@@ -1,4 +1,5 @@
-package com.ogcreate;
+package FirstProject.src.com.ogcreate;
+
 
 public class TypePromotion {
 

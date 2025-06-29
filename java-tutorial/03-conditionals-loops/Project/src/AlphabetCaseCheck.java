@@ -14,5 +14,6 @@ public class AlphabetCaseCheck {
             System.out.println("not a lower case");
         }
 
+        in.close();
     }
 }
