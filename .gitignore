@@ -1,0 +1,8 @@
+# Ignore VS Code settings
+.vscode/settings.json
+
+# Ignore compiled Java classes
+*.class
+
+# Ignore logs
+*.log
