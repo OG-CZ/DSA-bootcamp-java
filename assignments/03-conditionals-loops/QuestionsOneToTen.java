@@ -1,16 +1,19 @@
 
 public class QuestionsOneToTen {
-    
+
     public static void main(String[] args) {
-        
+
         areaOfCircle(7);
         areaOfTri(4, 3);
         areaOfRectangle(4, 3);
+        areaOfisocelesTri(3, 5);
         areaOfParallelogram(5, 3);
         areaOfRhombus(12, 14);
         areaOfEquilateralTri(3);
         perimiterOfTri(10);
         perimeterOfParallelogram(6, 4);
+        perimeterOfRectangle(5.5, 10.5);
+
     }
 
     static void areaOfCircle(double a) {
@@ -57,4 +60,11 @@ public class QuestionsOneToTen {
         int p = 2 * length + 2 * width;
         System.out.println(p);
     }
+
+    static void perimeterOfRectangle(double length, double width) {
+        double p = (length + width) * 2;
+
+        System.out.println(p);
+    }
+
 }
