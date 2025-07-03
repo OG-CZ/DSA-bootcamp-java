@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class QuestionTwentyOneToTwentySix {
+public class TwentyOneToTwentySix {
     public static void main(String[] args) {
         
         fibonacciSeries();
