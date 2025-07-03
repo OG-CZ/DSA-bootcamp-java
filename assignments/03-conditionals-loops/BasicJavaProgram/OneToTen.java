@@ -1,5 +1,5 @@
 
-public class QuestionsOneToTen {
+public class OneToTen {
 
     public static void main(String[] args) {
 
