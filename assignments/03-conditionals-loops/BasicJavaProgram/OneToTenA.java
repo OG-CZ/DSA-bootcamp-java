@@ -1,5 +1,5 @@
 
-public class OneToTen {
+public class OneToTenA {
 
     public static void main(String[] args) {
 
