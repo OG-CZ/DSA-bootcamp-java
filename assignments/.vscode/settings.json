@@ -1,3 +1,9 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        ".",
+        "03-conditionals-loops\\BasicJavaProgram",
+        "03-conditionals-loops\\IntermediateJavaProgram"
+    ],
+    "java.project.referencedLibraries": []
 }
