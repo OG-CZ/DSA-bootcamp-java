@@ -15,6 +15,9 @@ public class OneToTen {
         System.out.println(gradeCalculator(41));
         System.out.println(factorial(4));
         System.out.println(palindrome(12221));
+        System.out.println(pythagoreanTriplet(5, 3, 4));
+        System.out.println(primeNumbers(10, 50));
+        System.out.println(sumOfNaturalNumbers(5));
     }
 
     static String minAndMax(int... v) {
@@ -114,5 +117,25 @@ public class OneToTen {
         return "palindrome";
     }
 
+    static String pythagoreanTriplet(int num1, int num2, int num3) {
+        int[] arr = {num1, num2, num3};
+        Arrays.sort(arr);
+
+        double pythagoreanTriplet = (double) Math.pow(arr[0], 2) + Math.pow(arr[1], 2);
+        return (pythagoreanTriplet == Math.pow(arr[2], 2)) ? "Pythagorean" : "Not Pythagorean";
+    }
+
+    static String primeNumbers(int num1, int num2) {
+        return "not done";
+    }
     
+    static int sumOfNaturalNumbers(int num) {
+        int sum = 0;
+        for (int i = 0; num != 0; i++) {
+            sum += num;
+            num--;
+        }
+        return sum;
+    }
+
 }
