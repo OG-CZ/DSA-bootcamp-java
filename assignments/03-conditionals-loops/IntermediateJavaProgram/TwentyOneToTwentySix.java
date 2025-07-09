@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 
 
-public class TwentyOneToTwentySix1 {
+public class TwentyOneToTwentySix {
     public static void main(String[] args) {
         consonantOrVowel('f');
         perfectNumber(6);
