@@ -1,5 +1,7 @@
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 
 public class OneToTen {
@@ -126,8 +128,26 @@ public class OneToTen {
     }
 
     static String primeNumbers(int num1, int num2) {
-        return "not done";
+        List<Integer> prime = new ArrayList<>();
+
+        for (int i = num1; i <= num2; i++) {
+            if (i < 2) continue; 
+
+            boolean isPrime = true;
+
+            for (int j = 2; j <= Math.sqrt(i); j++) { 
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime) prime.add(i); 
+        }
+
+        return  "Prime numbers: " + String.valueOf(prime);
     }
+
     
     static int sumOfNaturalNumbers(int num) {
         int sum = 0;
