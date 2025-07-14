@@ -11,15 +11,19 @@ This repo contains my personal journey through solving **Data Structures and Alg
 
 ## 📁 Folder Structure
 
+<pre lang="text"> <code>
 ogcreate-dsa-bootcamp-java-journey/
 ├── 01-flow-of-program/
 ├── 02-first-java/
 ├── 03-conditionals-loops/
+│   ├── BasicJavaProgram/
+│   └── IntermediateJavaProgram/
 ├── 04-functions/
 ├── 05-arrays/
 ├── _LECTURES/
 │   ├── git-github-tutorial/
 │   └── lectures/
+</code></pre>
 
 ---
 
