@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class EasyQuestion {
     public static void main(String[] args) {
@@ -10,6 +12,16 @@ public class EasyQuestion {
 
         int arr3[] = {1,2,3,4};
         System.out.println(Arrays.toString(runningSum(arr3)));
+
+        int arr5[][] = {
+            {2,8,7},
+            {7,1,3},
+            {1,9,5}
+        };
+        System.out.println(maximumWealth(arr5));
+        
+        int arr6[] = {12,1,12};
+        System.out.println(kidsWithCandies(arr6, 3));
 
     }
 
@@ -44,4 +56,47 @@ public class EasyQuestion {
         
         return sum;
     }
-}
+
+        static int maximumWealth(int[][] accounts) {
+            int maxWealth = 0;
+
+            //  [[1,5],[7,3],[3,5]]
+            //  [[2,8,7],[7,1,3],[1,9,5]] // 17 12 15
+
+            for (int i = 0; i < accounts.length; i++) {
+                int sum = 0;
+
+                for (int j = 0; j < accounts[i].length; j++) {
+                    sum += accounts[i][j];
+                }
+
+                if (maxWealth < sum) {
+                    maxWealth = sum;
+                }
+            }
+            
+            return maxWealth;
+        }
+
+        //  {2,3,5,1,3}; + 3
+        static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+            ArrayList<Boolean> list = new ArrayList<>(); 
+
+            int max = candies[0];
+            
+            for (int m : candies) {
+                if (m > max) {
+                    max = m;
+                }
+            }
+
+            for (int i = 0; i < candies.length; i++) {
+                candies[i] += extraCandies;
+                if (candies[i] >= max) {
+                    list.add(true);
+                } else list.add(false);
+            }
+
+            return list; 
+        }
+    }
