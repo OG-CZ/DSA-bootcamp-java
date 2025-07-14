@@ -6,7 +6,6 @@ Welcome to the **DSA-Machine-Problems** repository! 👨‍💻
 
 This repo contains my personal journey through solving **Data Structures and Algorithms (DSA)** problems, along with helpful **lecture notes** and **Git/GitHub tutorials**.
 
-
 ---
 
 ## 📁 Folder Structure
@@ -30,10 +29,10 @@ ogcreate-dsa-bootcamp-java-journey/
 ## ✅ What's Inside?
 
 - 🧠 **Machine Problem Solutions**  
-  Solve DSA problems, with clear and structured code.
+  Solved DSA problems, with clear and structured code.
 
 - 📚 **_lectures Folder**  
-  Contains lecture practice, key concepts from the bootcamp series (DSA + Git/GitHub).
+  Contains lecture practice from the bootcamp series (DSA + Git/GitHub).
 
 - 🌱 **Progress-Driven Learning**  
   I add new solutions as i go through problems and video lectures. All code is written by me, and structured for readability.
@@ -60,6 +59,7 @@ This is my personal learning repo, but feel free to fork, star ⭐, or learn alo
 
 ## 🔗 Follow My Journey
 
-> 👤 Maintained by [ogcreate](https://github.com/ogcreate)
+> 👤 Maintained by [ogcreate](https://github.com/ogcreate) 
+<br>
 > 📷 Instagram [@_ogcz](https://www.instagram.com/_ogcz/)
 
