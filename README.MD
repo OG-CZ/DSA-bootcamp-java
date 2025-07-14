@@ -59,7 +59,7 @@ This is my personal learning repo, but feel free to fork, star ⭐, or learn alo
 
 ## 🔗 Follow My Journey
 
-> 👤 Maintained by [ogcreate](https://github.com/ogcreate) 
-<br>
-> 📷 Instagram [@_ogcz](https://www.instagram.com/_ogcz/)
+> 👤 Maintained by [ogcreate](https://github.com/ogcreate)  
+> 📷 Instagram [@_ogcz](https://www.instagram.com/_ogcz/)  
+> 🌴 Linktr https://linktr.ee/ogcz
 

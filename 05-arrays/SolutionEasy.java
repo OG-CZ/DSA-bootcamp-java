@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class EasyQuestion {
+public class SolutionEasy {
     public static void main(String[] args) {
         int arr1[] = {0,2,1,5,3,4};
         System.out.println(Arrays.toString(buildArray(arr1)));
@@ -23,6 +23,12 @@ public class EasyQuestion {
         int arr6[] = {12,1,12};
         System.out.println(kidsWithCandies(arr6, 3));
 
+        int arr7[] = {1,2,3,1,1,3};
+        System.out.println(numIdenticalPairs(arr7));
+        
+        int arr8[] = {8,1,2,2,3};
+        System.out.println(Arrays.toString(smallerNumbersThanCurrent(arr8)));
+    
     }
 
     static int[] buildArray(int[] nums) {
@@ -94,9 +100,43 @@ public class EasyQuestion {
                 candies[i] += extraCandies;
                 if (candies[i] >= max) {
                     list.add(true);
-                } else list.add(false);
+                } else {
+                    list.add(false);
+                }
             }
 
             return list; 
         }
+
+        static int numIdenticalPairs(int[] nums) {
+            int count = 0;
+
+            // int arr7[] = {1,2,3,1,1,3};
+
+            for (int i = 0; i < nums.length; i++) {
+                for (int j = 0; j < nums.length ; j++) {
+                  //  System.out.println(nums[i] + " " + nums[j]);
+                    if (i < j && nums[i] == nums[j]) {
+                        count++;
+                    }
+                }
+            }
+
+            return count;
+        }
+
+        static int[] smallerNumbersThanCurrent(int[] nums) {
+            int[] result = new int[nums.length];
+        
+            for (int i = 0; i < nums.length; i++) {
+                for (int j = 0; j < nums.length; j++) {
+                    System.out.println(nums[i] + " " + nums[j]);
+                    if (j != i && nums[j] < nums[i]) {
+                        result[i]++;
+                    }
+                }
+            }
+        
+            return result;
     }
+}
