@@ -33,9 +33,10 @@ public class SolutionEasyOne {
         int arr9index[] = {0,1,2,2,1};
         System.out.println(Arrays.toString(createTargetArray(arr9nums, arr9index)));
 
+        int arr10[] = {1, 1, 2, 2};
+        int number = 2;
+        System.out.println(Arrays.toString(shuffle(arr10, number)));
 
-        String ans10pangram = "thequickbrownfoxjumpsoverthelazydog";
-        System.out.println(checkIfPangram(ans10pangram));
 
 
     }
@@ -192,22 +193,24 @@ public class SolutionEasyOne {
 
     }
 
-    static boolean checkIfPangram(String sentence) {
 
-        sentence = sentence.toLowerCase();
+    /*
+        = x1 y1 x2 y2 .... Xn Yn so on
+        1  2  1  2 // (x1 = 1, y1 = 2) (x2 = 1, y2 = 2)
+    // 1 1 2 2
+     */
 
-        for (char ch = 'a'; ch <= 'z'; ch++) {
-            
-            if (sentence.indexOf(ch) == -1) {
-                return false;
-            }
-            /*
-             *       if (!sentence.contains(String.valueOf(ch))) {
-                return false;
-            }
-             */
+    static int[] shuffle(int[] nums, int n) {
+        int result[] = new int[nums.length];
+
+        for (int i = 0; i < n; i++) {
+            result[2 * i] = nums[i];
+            result[(2 * i) + 1] = nums[i + n];
         }
 
-        return true;
+        
+        return result;
     }
+
+
 }

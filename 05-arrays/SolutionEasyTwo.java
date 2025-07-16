@@ -5,15 +5,38 @@ import java.util.List;
 public class SolutionEasyTwo {
 
     public static void main(String[] args) {
-        String ans1RuleKey = "Color";
-        String ans1RuleValue = "Silver";
+
+        String ans1pangram = "thequickbrownfoxjumpsoverthelazydog";
+        System.out.println(checkIfPangram(ans1pangram));
+
+        String ans2RuleKey = "Color";
+        String ans2RuleValue = "Silver";
         System.out.println(countMatches(new ArrayList<>(Arrays.asList(
             new ArrayList<>(Arrays.asList("phone","blue","pixel")),
             new ArrayList<>(Arrays.asList("computer","silver","lenovo")),
             new ArrayList<>(Arrays.asList("phone","gold","iphone"))
-        ))  , ans1RuleKey, ans1RuleValue));
+        ))  , ans2RuleKey, ans2RuleValue));
 
     }
+
+        static boolean checkIfPangram(String sentence) {
+
+            sentence = sentence.toLowerCase();
+
+            for (char ch = 'a'; ch <= 'z'; ch++) {
+                
+                if (sentence.indexOf(ch) == -1) {
+                    return false;
+                }
+                /*
+                *       if (!sentence.contains(String.valueOf(ch))) {
+                    return false;
+                }
+                */
+            }
+
+            return true;
+        }
 
         static int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
             int index = 0;
