@@ -1,4 +1,4 @@
-#### The numerated folders you see are the DSA-MACHINE-PROBLEMS that i have currently solved.
+#### The numerated folders you see are the DSA-MACHINE-PROBLEMS/LEETCODE that i have currently solved.
 
 # DSA Bootcamp Java Journey
 
