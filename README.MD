@@ -1,10 +1,8 @@
-### The numerated folders you see are the DSA-MACHINE-PROBLEMS that i have currently solved.
+#### The numerated folders you see are the DSA-MACHINE-PROBLEMS that i have currently solved.
 
 # DSA Bootcamp Java Journey
 
-Welcome to my **DSA Bootcamp Java Journey** repository! 👨‍💻
-
-This repo contains my personal journey through solving **Data Structures and Algorithms (DSA)** problems, along with helpful **lecture notes** and **Git/GitHub tutorials**.
+This repo contains my personal journey through solving **Data Structures and Algorithms (DSA)** problems, along with minor **lecture code** and **Git/GitHub tutorials**.
 
 ---
 
