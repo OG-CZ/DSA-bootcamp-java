@@ -1,6 +1,6 @@
-### The numerated directories you see are the DSA-MACHINE-PROBLEMS that i have currently solved.
+### The numerated folders you see are the DSA-MACHINE-PROBLEMS that i have currently solved.
 
-# DSA-Machine-Problems & Bootcamp Notes
+# DSA-Machine-Problems
 
 Welcome to the **DSA-Machine-Problems** repository! 👨‍💻
 
