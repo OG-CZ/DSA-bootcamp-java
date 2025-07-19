@@ -16,8 +16,24 @@ public class SolutionEasyTwo {
             new ArrayList<>(Arrays.asList("computer","silver","lenovo")),
             new ArrayList<>(Arrays.asList("phone","gold","iphone"))
         ))  , ans2RuleKey, ans2RuleValue));
+        
 
+        int ans3[] = {-4,-3,-2,-1,4,3,2};
+        System.out.println(largestAltitude(ans3));
+
+
+        int ans4[][] = {
+            {1,1,0},
+            {1,0,1},
+            {0,0,0}
+        };
+
+        for (int[] i : flipAndInvertImage(ans4)) {
+            System.out.println(Arrays.toString(i));
+        }
     }
+
+    // ================================================================================
 
         static boolean checkIfPangram(String sentence) {
 
@@ -57,5 +73,48 @@ public class SolutionEasyTwo {
             }
 
         return count;
+    }
+
+    static int largestAltitude(int[] gain) {
+
+        int arr[] = new int[gain.length + 1];
+        
+        arr[0] = 0;
+        int count = 0;
+        int max = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+
+            arr[i] = arr[count] + gain[count]; 
+            count++;
+            
+            if (max < arr[i]) {
+                max = arr[i];
+            }        
+        }
+
+     return max;   
+    }
+
+    static int[][] flipAndInvertImage(int[][] image) {
+        
+        int[][] arr = new int[image.length][image[0].length];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+
+                arr[i][image[i].length - 1 - j] = image[i][j];
+
+                if (arr[i][image[i].length - 1 - j] == 0) {
+                    arr[i][image[i].length - 1 - j] = 1;
+                } else arr[i][image[i].length - 1 - j] = 0;
+            }    
+        }
+        
+
+        return arr;
+    }
+
+    static int oddCells(int m, int n, int[][] indices) {
+        
     }
 }
