@@ -38,14 +38,17 @@ ogcreate-dsa-bootcamp-java-journey/
 ---
 
 ## 📌 Topics Covered So Far
-- JAVA internal working 
-- Stack and Heap working
-- Basic Java Progam - (Control Flow Structure, Primitives vs Non Primitives vs String as immutable,)
-- Arrays & ArrayList
-- Loops and Conditionals 
+- Types of programming paradigm
+- Introduction to Programming
+- Basics of programming
 - Git & GitHub 
-- Lecture notes from DSA bootcamp
-- and a lot much more i can't remember every minute detail
+- JAVA internal working (JDK, JRE, JVM)
+- Stack and Heap working
+- Basic Java Progam - (Control Flow Structure, Primitives vs Non Primitives vs String as immutable)
+- Different Loops
+- If Else Statements
+- Arrays & ArrayList
+- and a lot much more i can't remember every minute detail... just not summing to 50% is on this list
 
 ---
 
