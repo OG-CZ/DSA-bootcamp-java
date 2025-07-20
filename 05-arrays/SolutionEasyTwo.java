@@ -34,6 +34,14 @@ public class SolutionEasyTwo {
 
         int ans5[][] = {{1,1}, {0,0}};
         System.out.println(oddCells(2, 2, ans5));
+
+        int ans6[][] = {
+            {1,1,1,1},
+            {1,1,1,1},
+            {1,1,1,1},
+            {1,1,1,1}
+        };
+        System.out.println(diagonalSum(ans6));
     }
 
     // ================================================================================
@@ -142,5 +150,25 @@ public class SolutionEasyTwo {
 
         
         return count; 
+    }
+
+    static int diagonalSum(int[][] mat) {
+        int sum = 0;
+
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat[i].length; j++) {
+                if (i == j) {
+                    sum += mat[i][j];
+                    if (i != mat.length - i - 1) {
+                        sum += mat[mat[i].length - i - 1][j];
+                    } 
+                }
+
+            }
+
+        
+        }
+
+        return sum;
     }
 }
