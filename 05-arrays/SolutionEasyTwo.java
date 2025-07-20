@@ -31,6 +31,17 @@ public class SolutionEasyTwo {
         for (int[] i : flipAndInvertImage(ans4)) {
             System.out.println(Arrays.toString(i));
         }
+
+        int ans5[][] = {{1,1}, {0,0}};
+        System.out.println(oddCells(2, 2, ans5));
+
+        int ans6[][] = {
+            {1,1,1,1},
+            {1,1,1,1},
+            {1,1,1,1},
+            {1,1,1,1}
+        };
+        System.out.println(diagonalSum(ans6));
     }
 
     // ================================================================================
@@ -114,7 +125,50 @@ public class SolutionEasyTwo {
         return arr;
     }
 
+
+    //    int ans5[][] = {{1,1}, {0,0}};
     static int oddCells(int m, int n, int[][] indices) {
+        int arr[][] = new int[m][n];
+
+        for (int i = 0; i < indices.length; i++) {
+            for (int j = 0; j < n; j++) {
+                arr[indices[i][0]][j] += 1;
+            }
+            for (int j = 0; j < m; j++) {
+                arr[j][indices[i][1]] += 1;
+            }
+        }
         
+        int count = 0;
+        for (int[] is : arr) {
+            for (int is2 : is) {
+                if (is2 % 2 != 0) {
+                    count++;
+                }
+            }
+        }
+
+        
+        return count; 
+    }
+
+    static int diagonalSum(int[][] mat) {
+        int sum = 0;
+
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat[i].length; j++) {
+                if (i == j) {
+                    sum += mat[i][j];
+                    if (i != mat.length - i - 1) {
+                        sum += mat[mat[i].length - i - 1][j];
+                    } 
+                }
+
+            }
+
+        
+        }
+
+        return sum;
     }
 }

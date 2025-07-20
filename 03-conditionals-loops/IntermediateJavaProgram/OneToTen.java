@@ -1,11 +1,13 @@
 
 public class OneToTen {
     public static void main(String[] args) {
+        
         factorial(10);
         electricityBill(400);
         averageOfNumbers(new int[] {8,2,6,4,5});
         discountOfProduct(100, 25);
         distanceBetweenTwoPoints(0, 0, 6, 2);
+
         commisionPercentage(6.3, 132_000);
         System.out.println(powerOf(2, 5));
         depreciationOfValue(75000, 6000, 90000);
