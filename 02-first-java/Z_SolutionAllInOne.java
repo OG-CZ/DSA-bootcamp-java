@@ -1,9 +1,9 @@
 
-public class SolutionAllInOne {
+public class Z_SolutionAllInOne {
 
     public static void main(String[] args) {
         System.out.println("Write a program to print whether a number is even or odd, also take input from the user.");
-        SolutionAllInOne.OddOrEven(-3);
+        Z_SolutionAllInOne.OddOrEven(-3);
 
         System.out.println("Take name as input and print a greeting message for that particular name.");
         greetings("ogcreate");
