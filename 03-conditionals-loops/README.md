@@ -1,4 +1,5 @@
-# 🧠 Java Practice Programs  
+# 🧠 Conditional and Loops Machine Problem
+
 ### [📺 Watch the Tutorial](https://youtu.be/ldYLYRNaucM)
 
 This repository contains solutions to a series of beginner to intermediate Java problems that are perfect for sharpening your programming skills. Each program is kept simple, focusing on clarity and foundational logic.
