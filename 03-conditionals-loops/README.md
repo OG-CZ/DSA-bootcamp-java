@@ -68,4 +68,4 @@ This repository contains solutions to a series of beginner to intermediate Java 
 23. Leap Year Checker  
 24. Sum of Digits of a Number  
 25. Count Allowed Days in August (Even Days Only)  
-26. Sum Negative, Positive Even, and Positive Odd Numbers (Until 0)  
+26. Sum Negative, Positive Even, and Positive Odd Numbers (Until 0)
