@@ -1,0 +1,41 @@
+check my current work Create flowchart and pseudocode for the following:
+1. Input a year and find whether it is a leap year or not.
+2. Take two numbers and print the sum of both.
+3. Take a number as input and print the multiplication table for it.
+4. Take 2 numbers as inputs and find their HCF and LCM.
+5. Keep taking numbers as inputs till the user enters ‘x’, after that print sum of all.
+
+This is created in gitbash using vi pseudocode.txt
+==========
+PSEUDOCODE
+==========
+
+1. Input a year and find whether it is a leap year or not.
+Start
+        input year
+        if year % 4 = 0 and year modulo 100 != 0 or year modulo 400 = 0
+                print leap year
+        else
+                not leap year
+End
+
+2. Take two numbers and print the sum of both.
+Start
+        input number1, number2
+        sum = numer1 + number2
+        print sum
+End
+
+3. Take a number as input and print the multiplication table for it.
+Start
+        input number
+                for i = 0; i <= 12;
+                        print num * i
+                i++
+End
+
+4. Take 2 numbers as inputs and find their HCF and LCM.
+Start
+        input number1 and number2
+
+
