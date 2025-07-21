@@ -3,7 +3,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SolutionEasyTwo {
-
     public static void main(String[] args) {
 
         String ans1pangram = "thequickbrownfoxjumpsoverthelazydog";
@@ -42,6 +41,22 @@ public class SolutionEasyTwo {
             {1,1,1,1}
         };
         System.out.println(diagonalSum(ans6));
+
+
+        int ans7[] = {555,901,482,1771};
+        System.out.println(findNumbers(ans7));
+
+        int ans8[][] = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
+        for (int[] is : transpose(ans8)) {
+            System.out.println(Arrays.toString(is));
+        }
+
+        int ans9[] = {1,2,0,0};
+        System.out.println(addToArrayForm(ans9, 34));
     }
 
     // ================================================================================
@@ -130,15 +145,21 @@ public class SolutionEasyTwo {
     static int oddCells(int m, int n, int[][] indices) {
         int arr[][] = new int[m][n];
 
-        for (int i = 0; i < indices.length; i++) {
-            for (int j = 0; j < n; j++) {
-                arr[indices[i][0]][j] += 1;
+
+        for (int i = 0; i < indices.length; i++) { // loop through each pair in indices
+            for (int j = 0; j < n; j++) { // loop columns (j < n = 0 to n-1), update the whole row
+                arr[indices[i][0]][j] += 1; 
+                // indices[i][0] = get the row index from current pair
+                // arr[indices[i][0]][j] → go to that row and increment all columns
             }
-            for (int j = 0; j < m; j++) {
+
+            for (int j = 0; j < m; j++) { // loop rows (j < m = 0 to m-1), update the whole column
                 arr[j][indices[i][1]] += 1;
+                // indices[i][1] = get the column index from current pair
+                // arr[j][indices[i][1]] → go to that column and increment all rows
             }
         }
-        
+
         int count = 0;
         for (int[] is : arr) {
             for (int is2 : is) {
@@ -170,5 +191,43 @@ public class SolutionEasyTwo {
         }
 
         return sum;
+    }
+
+    static int findNumbers(int[] nums) {
+        int even = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            int count = 0;
+            while (nums[i] > 0) {
+                nums[i] = nums[i] / 10;
+                count++;
+            }
+            if (count % 2 == 0) {
+                even++;
+            }
+        }
+
+        return even;
+    }
+
+ // {1,2,3} {4,5,6} = 0 and 1
+    static int[][] transpose(int[][] matrix) {
+        int arr[][] = new int[matrix[0].length][matrix.length]; // number of columns and number of length
+            
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr[i].length; j++) {
+                    arr[i][j] = matrix[j][i];
+                }
+            }
+
+        return arr;
+    }
+
+    static List<Integer> addToArrayForm(int[] num, int k) {
+        ArrayList<Integer> list = new ArrayList<>();
+
+        
+        
+        return list;
     }
 }
