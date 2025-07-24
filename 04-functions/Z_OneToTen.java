@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class OneToTen {
+public class Z_OneToTen {
 
     public static void main(String[] args) {
 

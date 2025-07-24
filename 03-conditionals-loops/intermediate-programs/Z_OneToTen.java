@@ -1,5 +1,5 @@
 
-public class OneToTen {
+public class Z_OneToTen {
     public static void main(String[] args) {
         
         factorial(10);

@@ -1,4 +1,4 @@
-public class TenToTwenty {
+public class Z_TenToTwenty {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TwentyOneToTwentySix {
+public class Z_TwentyOneToTwentySix {
     public static void main(String[] args) {
         
         fibonacciSeries();

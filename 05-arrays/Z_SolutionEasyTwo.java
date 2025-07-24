@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
-public class SolutionEasyTwo {
+public class Z_SolutionEasyTwo {
     public static void main(String[] args) {
 
         String ans1pangram = "thequickbrownfoxjumpsoverthelazydog";
@@ -57,8 +58,15 @@ public class SolutionEasyTwo {
 
         int ans9[] = {1,2,0,0};
         System.out.println(addToArrayForm(ans9, 34));
-    }
 
+        int arr10[][] = {
+            {1950, 1961},
+            {1960, 1971},
+            {1970, 1981}
+        };
+        System.out.println(maximumPopulation(arr10));
+
+    }
     // ================================================================================
 
         static boolean checkIfPangram(String sentence) {
@@ -223,11 +231,66 @@ public class SolutionEasyTwo {
         return arr;
     }
 
-    static List<Integer> addToArrayForm(int[] num, int k) {
-        ArrayList<Integer> list = new ArrayList<>();
+    /*
+     * 
+        | Step | `i` | `num[i]` | `k` before | `k += num[i]` | `k % 10` added | `k` after `/= 10` | `result`      |
+        | ---- | --- | -------- | ---------- | ------------- | -------------- | ----------------- | ------------- |
+        | 1    | 3   | 0        | 34         | 34            | 4              | 3                 | \[4]          |
+        | 2    | 2   | 0        | 3          | 3             | 3              | 0                 | \[3, 4]       |
+        | 3    | 1   | 2        | 0          | 2             | 2              | 0                 | \[2, 3, 4]    |
+        | 4    | 0   | 1        | 0          | 1             | 1              | 0                 | \[1, 2, 3, 4] |
+        | 5    | -1  | —        | 0          | loop ends     | —              | —                 | —             |
+     *
+     */
 
-        
-        
-        return list;
+     /*
+        Iteration 1:
+        i = 1, num[i] = 1
+        k = 142
+        k += num[i] → 142 + 1 = 143
+        addFirst(143 % 10) → 3
+        k = 143 / 10 = 14
+        i-- = 0
+
+        Iteration 2:
+        i = 0, num[i] = 0
+        k += 0 → 14 + 0 = 14
+        addFirst(14 % 10) = 4
+        k = 14 / 10 = 1
+        i-- = -1
+
+        Iteration 3:
+        i = -1, so skip num[i]
+        k = 1
+        addFirst(1 % 10) = 1
+        k = 1 / 10 = 0 
+    
+      */
+    static List<Integer> addToArrayForm(int[] num, int k) { 
+        LinkedList<Integer> list = new LinkedList<>(); // To store the result digits in order
+
+        int i = num.length - 1; // Start from the last index (rightmost digit)
+
+        // Keep looping while there are digits in num[] OR digits in k
+        while (i >= 0 || k > 0) {
+            if (i >= 0) {     // this disables reading negative numbers or below numbers for num[] cuase it will error if it has num[-1]
+                k += num[i];  // Add num[i] to k to simulate digit-by-digit addition
+                i--;          // Move to the next digit (leftward)
+            }
+
+            // Get the current digit (rightmost) and add it to the front of the list
+            list.addFirst(k % 10);
+
+            // Remove the last digit from k (carry forward to the next iteration)
+            k /= 10;
+        }
+
+        return list; // Return the final result
     }
+
+    static int maximumPopulation(int[][] logs) { // ! comeback
+
+
+    }
+    
 }

@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class ElevenToTwenty {
+public class Z_ElevenToTwenty {
     public static void main(String[] args) {
         
         compoundInterest(12_000, 0.03, 365, 10);
