@@ -290,7 +290,29 @@ public class Z_SolutionEasyTwo {
 
     static int maximumPopulation(int[][] logs) { // ! comeback
 
+        int years[] = new int[101];
 
+        for (int[] is : logs) {
+            int birth = is[0];
+            int death = is[1];
+
+            years[birth - 1950] += 1;
+            years[death - 1950] -= 1;
+        }
+
+        int maxPop = 0;
+        int currentPop = 0;
+        int maxYear = 0;
+
+        for (int i = 0; i < years.length; i++) {
+            currentPop += years[i];
+           if (currentPop > maxPop) {
+                maxPop = currentPop;
+                maxYear = 1950 + i;
+           }
+        }
+
+        return maxYear;
     }
     
 }
