@@ -288,28 +288,30 @@ public class Z_SolutionEasyTwo {
         return list; // Return the final result
     }
 
+    // birth, death
     static int maximumPopulation(int[][] logs) { // ! comeback
 
-        int years[] = new int[101];
+        int arr[] = new int[101];
 
-        for (int[] is : logs) {
-            int birth = is[0];
-            int death = is[1];
+        for (int i = 0; i < logs.length; i++) {
+            int birth = logs[i][0] - 1950;
+            int death = logs[i][1] - 1950;
 
-            years[birth - 1950] += 1;
-            years[death - 1950] -= 1;
+            arr[birth] += 1;
+            arr[death] -= 1;
         }
 
-        int maxPop = 0;
-        int currentPop = 0;
+        int prefix = 0;
+        int max = 0;
         int maxYear = 0;
 
-        for (int i = 0; i < years.length; i++) {
-            currentPop += years[i];
-           if (currentPop > maxPop) {
-                maxPop = currentPop;
+
+        for (int i = 0; i < arr.length; i++) {
+            prefix += arr[i];
+            if (max < prefix) {
+                max = prefix;
                 maxYear = 1950 + i;
-           }
+            }
         }
 
         return maxYear;
