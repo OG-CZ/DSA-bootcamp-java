@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class Z_SolutionEasyThree {
@@ -30,6 +29,20 @@ public class Z_SolutionEasyThree {
         };
         System.out.println(luckyNumbers(ans4arr));
 
+        int ans5arr[] = { 1, 2, 3, 4 };
+        System.out.println(maxSubArray(ans5arr));
+
+        int ans6arr[][] = {
+                { 1, 2 },
+                { 3, 4 }
+        };
+
+        for (int[] is : matrixReshape(ans6arr, 1, 4)) {
+            System.out.println(Arrays.toString(is));
+        }
+
+        int ans7arr[] = { 4, 9, 99, 999, 9, 9 };
+        System.out.println(Arrays.toString(plusOne(ans7arr)));
     }
 
     static boolean findRotation(int[][] mat, int[][] target) {
@@ -119,4 +132,99 @@ public class Z_SolutionEasyThree {
         return list;
     }
 
+    /*
+     * int prev = Integer.MIN_VALUE;
+     * 
+     * for (int i = 0; i < nums.length; i++) {
+     * int sum = 0;
+     * for (int j = i; j < nums.length; j++) {
+     * sum += nums[j];
+     * if (sum > prev) {
+     * prev = sum;
+     * }
+     * }
+     * }
+     */
+    static int maxSubArray(int[] nums) {
+        // 1 2 3 4
+
+        int maxSum = nums[0]; // Start with the first element
+        int currentSum = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            // Either extend the current subarray or start a new one at nums[i]
+            currentSum = Math.max(nums[i], currentSum + nums[i]); // tracks what you're building NOW
+            maxSum = Math.max(maxSum, currentSum); // remembers the BEST you've seen so far
+        }
+
+        return maxSum;
+    }
+
+    static int[][] matrixReshape(int[][] mat, int r, int c) {
+
+        int m = mat.length;
+        int n = mat[0].length;
+
+        int arr[][] = new int[r][c];
+        int vector[] = new int[m * n];
+
+        int index = 0;
+
+        if (m * n != r * c)
+            return mat;
+
+        for (int i[] : mat) {
+            for (int j : i) {
+                vector[index++] = j;
+            }
+        }
+
+        index = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                arr[i][j] = vector[index++];
+            }
+        }
+        return arr;
+    }
+
+    /*
+     * Optimized way
+     * public int[][] matrixReshape(int[][] mat, int r, int c) {
+     * int m = mat.length, n = mat[0].length;
+     * 
+     * if (m * n != r * c) return mat; // can't reshape
+     * 
+     * int[][] res = new int[r][c];
+     * 
+     * for (int i = 0; i < m * n; i++) {
+     * // Calculate original row & col
+     * int originalRow = i / n;
+     * int originalCol = i % n;
+     * 
+     * // Calculate new row & col
+     * int newRow = i / c;
+     * int newCol = i % c;
+     * 
+     * res[newRow][newCol] = mat[originalRow][originalCol];
+     * }
+     * 
+     * return res;
+     * }
+     */
+
+    static int[] plusOne(int[] digits) {
+
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] < 9) {
+                digits[i]++;
+                return digits;
+            }
+            digits[i] = 0;
+        }
+
+        int arr[] = new int[digits.length + 1];
+        arr[0] = 1;
+        return arr;
+    }
 }
