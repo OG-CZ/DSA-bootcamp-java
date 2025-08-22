@@ -43,6 +43,13 @@ public class Z_SolutionEasyThree {
 
         int ans7arr[] = { 4, 9, 99, 999, 9, 9 };
         System.out.println(Arrays.toString(plusOne(ans7arr)));
+
+        int ans8arr[] = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+        System.out.println(removeDuplicates(ans8arr));
+
+        int ans9arr[] = { 1, 2, 3 };
+        System.out.println(minCostToMoveChips(ans9arr));
+
     }
 
     static boolean findRotation(int[][] mat, int[][] target) {
@@ -226,5 +233,46 @@ public class Z_SolutionEasyThree {
         int arr[] = new int[digits.length + 1];
         arr[0] = 1;
         return arr;
+    }
+
+    static int removeDuplicates(int[] nums) {
+
+        int index = 1;
+        int prev = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            if (!(prev == nums[i])) {
+                prev = nums[i];
+                nums[index++] = prev;
+            }
+        }
+
+        return index;
+    }
+
+    /*
+     * int prev = nums[0];
+     * int count = 1;
+     * // 0, 0, 1, 1, 1, 2, 2, 3, 3, 4
+     * for (int i = 0; i < nums.length; i++) {
+     * if (nums[i] != prev) {
+     * // System.out.println("prev: " + prev);
+     * count++;
+     * prev = nums[i];
+     * }
+     * }
+     */
+
+    static int minCostToMoveChips(int[] position) {
+        int even = 0;
+        int odd = 0;
+
+        for (int i : position) {
+            if (i % 2 == 0)
+                even++;
+            else
+                odd++;
+        }
+        return Math.min(even, odd);
     }
 }
