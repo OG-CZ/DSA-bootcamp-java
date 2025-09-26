@@ -6,13 +6,13 @@ public class Q06_PeakIndexInMountainArray {
     }
 
     // https://leetcode.com/problems/peak-index-in-a-mountain-array/
-    static int peakIndexInMountainArray(int[] arr) {
+    static int peakIndexInMountainArray(int[] nums) {
         int start = 0;
-        int end = arr.length - 1;
+        int end = nums.length - 1;
 
         while (start < end) {
             int middle = start + (end - start) / 2;
-            if (arr[middle] > arr[middle + 1]) {
+            if (nums[middle] > nums[middle + 1]) {
                 // you are in decreasing part of the array
                 // this maybe answer, but look at left
                 // this is why end != mid - 1

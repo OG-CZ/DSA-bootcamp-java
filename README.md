@@ -1,139 +1,74 @@
-#### The numerated folders you see are the DSA-MACHINE-PROBLEMS/LEETCODE that i have currently solved.
+# DSA Bootcamp Java
 
-# DSA Bootcamp Java Journey
+[Kunal Kushwaha's DSA Bootcamp Java](https://www.youtube.com/watch?v=rZ41y93P2Qo&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)
 
-This repo contains my personal journey through solving **Data Structures and Algorithms (DSA)** problems, along with minor **lecture code** and **Git/GitHub tutorials**.
+This repo contains my personal journey through solving Data Structures and Algorithms (DSA) problems, along with minor lecture code and Git/GitHub tutorials.
 
----
+- [Introduction / Setup](link)
+- [Flow of Program / Java Basics](link)
+- [Functions / Methods](link)
+- [Arrays & ArrayList](link)
+- [Searching](link)
+  - [Linear Search](link)
+  - [Binary Search](link)
+  - [Binary Search in 2D Arrays](link)
+- [Sorting](link)
+  - [Bubble Sort](link)
+  - [Selection Sort](link)
+  - [Insertion Sort](link)
+  - [Cyclic Sort](link)
+  - [Merge Sort](link)
+  - [Quick Sort](link)
+  - [Counting Sort](link)
+- [Time and Space Complexity](link)
+- [Mathematics / Number Theory](link)
+  - [Bit Manipulation](link)
+  - [Sieve of Eratosthenes](link)
+  - [Prime Factorization](link)
+  - [GCD & LCM](link)
+  - [Modular Arithmetic](link)
+- [Recursion](link)
+  - [Basic Recursion Problems](link)
+  - [Recursion with Arrays](link)
+  - [Recursion with Strings](link)
+  - [Recursion with Subsets & Subsequence](link)
+- [Backtracking](link)
+  - [N-Queens Problem](link)
+  - [Sudoku Solver](link)
+  - [Maze Problems](link)
+- [Object-Oriented Programming](link)
+- [Linked List](link)
+  - [Singly Linked List](link)
+  - [Doubly Linked List](link)
+  - [Circular Linked List](link)
+- [Stacks & Queues](link)
+  - [Stack using Arrays / Linked List](link)
+  - [Queue using Arrays / Linked List](link)
+  - [Circular Queue](link)
+- [Trees](link)
+  - [Binary Trees](link)
+  - [Binary Search Trees](link)
+  - [Tree Traversals (DFS & BFS)](link)
+  - [AVL Trees](link)
+- [Hashmaps / Hashing](link)
+- [Dynamic Programming](link)
+  - [Fibonacci Variants](link)
+  - [Knapsack Problem](link)
+  - [Longest Common Subsequence](link)
+  - [Tabulation & Memoization](link)
+- [Heaps / Priority Queues](link)
+  - [Min Heap](link)
+  - [Max Heap](link)
+  - [Heap Sort](link)
+- [Graphs](link)
+  - [Graph Representations (Adjacency List/Matrix)](link)
+  - [DFS & BFS on Graphs](link)
+  - [Dijkstra’s Algorithm](link)
+  - [Bellman-Ford](link)
+  - [Floyd Warshall](link)
+  - [Minimum Spanning Tree (Kruskal / Prim)](link)
+- [Additional Topics / Advanced](link)
 
-## Folder Structure
-
-<pre lang="text"> <code>
-ogcreate-dsa-bootcamp-java-journey/
-├── 01-flow-of-program/
-├── 02-first-java/
-├── 03-conditionals-loops/
-│   ├── BasicJavaProgram/
-│   └── IntermediateJavaProgram/
-├── 04-functions/
-├── 05-arrays/
-├── _LECTURES/
-│   ├── git-github-tutorial/
-│   └── lectures/
-</code></pre>
-
----
-
-## What's Inside?
-
-- **Machine Problem Solutions**  
-  Solved DSA problems, with clear and structured code.
-
-- **_lectures Folder**  
-  Contains lecture practice from the bootcamp series (DSA + Git/GitHub).
-
-- **Progress-Driven Learning**  
-  I add new solutions as i go through problems and video lectures. All code is written by me, and structured for readability.
-
----
-
-## Topics Covered So Far
-- Types of programming paradigm
-- Introduction to Programming
-- Basics of programming
-- Git & GitHub 
-- JAVA internal working (JDK, JRE, JVM)
-- Stack and Heap working
-- Basic Java Progam - (Control Flow Structure, Primitives vs Non Primitives vs String as immutable)
-- Different Loops
-- If Else Statements
-- Arrays & ArrayList
-- and a lot much more i can't remember every minute detail... just not summing to 50% is on this list
-
----
-
-## Feedback / Contributions
-
-This is my personal learning repo, but feel free to fork, star, or learn along with me! If you spot issues or have suggestions, open an issue or PR. I appreciate it!
-
----
-
-## Follow My Journey
-
-> Instagram [@_ogcz](https://www.instagram.com/_ogcz/)  
-
-
-
-
-
-<!--
-
-#### The numerated folders you see are the DSA-MACHINE-PROBLEMS/LEETCODE that i have currently solved.
-
-# DSA Bootcamp Java Journey
-
-This repo contains my personal journey through solving **Data Structures and Algorithms (DSA)** problems, along with minor **lecture code** and **Git/GitHub tutorials**.
-
----
-
-## 📁 Folder Structure
-
-<pre lang="text"> <code>
-ogcreate-dsa-bootcamp-java-journey/
-├── 01-flow-of-program/
-├── 02-first-java/
-├── 03-conditionals-loops/
-│   ├── BasicJavaProgram/
-│   └── IntermediateJavaProgram/
-├── 04-functions/
-├── 05-arrays/
-├── _LECTURES/
-│   ├── git-github-tutorial/
-│   └── lectures/
-</code></pre>
-
----
-
-## ✅ What's Inside?
-
-- 🧠 **Machine Problem Solutions**  
-  Solved DSA problems, with clear and structured code.
-
-- 📚 **_lectures Folder**  
-  Contains lecture practice from the bootcamp series (DSA + Git/GitHub).
-
-- 🌱 **Progress-Driven Learning**  
-  I add new solutions as i go through problems and video lectures. All code is written by me, and structured for readability.
-
----
-
-## 📌 Topics Covered So Far
-- Types of programming paradigm
-- Introduction to Programming
-- Basics of programming
-- Git & GitHub 
-- JAVA internal working (JDK, JRE, JVM)
-- Stack and Heap working
-- Basic Java Progam - (Control Flow Structure, Primitives vs Non Primitives vs String as immutable)
-- Different Loops
-- If Else Statements
-- Arrays & ArrayList
-- and a lot much more i can't remember every minute detail... just not summing to 50% is on this list
-
----
-
-## 💬 Feedback / Contributions
-
-This is my personal learning repo, but feel free to fork, star ⭐, or learn along with me! If you spot issues or have suggestions, open an issue or PR. I appreciate it!
-
----
-
-## 🔗 Follow My Journey
-
-> 👤 Maintained by [ogcz](https://github.com/og-cz)  
-> 📷 Instagram [@_ogcz](https://www.instagram.com/_ogcz/)  
-> 🌴 Linktr https://linktr.ee/ogcz
-
-
-
---!>
+</br>
+> “Your brain is like a muscle: the more you use it and struggle, the more it grows.”  
+> — *Khan Academy*
