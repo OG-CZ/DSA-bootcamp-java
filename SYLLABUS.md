@@ -1,3 +1,9 @@
+# DSA Bootcamp Java
+
+[Kunal Kushwaha's DSA Bootcamp Java](https://www.youtube.com/watch?v=rZ41y93P2Qo&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)
+
+This repo contains my personal journey through solving Data Structures and Algorithms (DSA) problems, along with minor lecture code.
+
 - [Complete Git & GitHub Course](https://youtu.be/apGV9Kg7ics)
 - [Introduction to Programming](https://youtu.be/wn49bJOYAZM)
     - [Types of languages](https://youtu.be/wn49bJOYAZM?t=171)
@@ -203,3 +209,8 @@
 - NP-Completeness
 - Multithreading
 - Square Root Decomposition
+
+</br>
+
+> “Your brain is like a muscle: the more you use it and struggle, the more it grows.”  
+> — *Khan Academy*
